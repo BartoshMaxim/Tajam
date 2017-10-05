@@ -1,0 +1,574 @@
+﻿@font-face {
+    font-family: Playfair Display Black;
+    src: url('../Fonts/PlayfairDisplay-Black.otf');
+}
+
+@font-face {
+    font-family: Playfair Display Bold;
+    src: url('../Fonts/PlayfairDisplayBold.ttf');
+}
+
+@font-face {
+    font-family: Playfair Display Regular;
+    src: url('../Fonts/PlayfairDisplayRegular.ttf');
+}
+
+@font-face {
+    font-family: Roboto Light;
+    src: url('../Fonts/Roboto Light.ttf');
+}
+
+@font-face {
+    font-family: Hammersmith One;
+    src: url('../Fonts/HammersmithOne.ttf');
+}
+
+@font-face {
+    font-family: Roboto Black;
+    src: url('../Fonts/Roboto Black.ttf');
+}
+
+@font-face {
+    font-family: Roboto Thin;
+    src: url('../Fonts/Roboto Thin.ttf');
+}
+
+@font-face {
+    font-family: Roboto Regular;
+    src: url('../Fonts/Roboto Regular.ttf');
+}
+
+body {
+    font-family: Roboto Light;
+    font-size: 14px;
+    margin: 0px;
+    color: white;
+}
+
+h2 {
+    font-family: Playfair Display Bold;
+    font-size: 22px;
+    color: #413d4b;
+}
+
+h3 {
+    font-family: Roboto Black;
+    font-size: 15px;
+    color: white;
+}
+
+.content {
+    width: 1600px;
+    margin: 0 auto 0 auto;
+}
+
+header {
+    height: 670px;
+    background: url('../Images/back_head_img.png') no-repeat;
+    position: relative;
+}
+
+footer {
+    height: 400px;
+    background: url('../Images/back_foot_img.png') no-repeat;
+    position: relative;
+}
+
+.layer {
+    background: rgb(9, 5, 47); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, rgb(9, 5, 47), rgb(49, 29, 94)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgb(9, 5, 47), rgb(49, 29, 94)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgb(9, 5, 47), rgb(49, 29, 94)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgb(9, 5, 47), rgb(49, 29, 94)); /* Standard syntax (must be last)*/
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+
+/*----------------------------HEADER----------------------------*/
+ol.carousel-indicators {
+    border-color: #bab9bc;
+}
+
+    ol.carousel-indicators .active {
+        background-color: #00e0d0;
+        border-color: #00e0d0;
+    }
+
+ul.navbar-nav {
+    float: right;
+    margin-right: 330px;
+}
+
+div .navbar-default .navbar-nav > .active > a, div .navbar-default .navbar-nav > .active > a:hover {
+    background-color: transparent;
+    font-family: Roboto Black;
+    font-size: 13px;
+    color: #00e0d0;
+}
+
+div .navbar-default .navbar-nav > li > a, div .navbar-default .navbar-nav > li > a:hover {
+    background-color: transparent;
+    font-family: Roboto Black;
+    font-size: 13px;
+    color: white;
+}
+
+div.navbar-header a.navbar-brand img {
+    float: left;
+    margin-left: 330px;
+}
+
+nav.navbar-default ul.navbar-nav {
+    margin-top: 16px;
+}
+
+
+#myCarousel {
+    width: 690px;
+    height: 440px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+div.head-text {
+    font-family: 'Playfair Display Black', arial;
+    font-size: 32px;
+    color: white;
+}
+
+.item {
+    height: 250px;
+}
+
+nav.navbar {
+    margin-bottom: 145px;
+}
+
+nav.navbar-default {
+    background-color: transparent;
+    border: none;
+}
+
+
+div.main-text {
+    font-family: 'Roboto Light';
+    font-size: 14px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.item hr {
+    width: 50px;
+    border: none; /* Убираем границу для браузера Firefox */
+    color: #00e0d0; /* Цвет линии для остальных браузеров */
+    background-color: #00e0d0; /* Цвет линии для браузера Firefox и Opera */
+    height: 1px;
+}
+
+.learn-more-btn, .learn-more-btn:hover, .learn-more-btn:active {
+    background: none;
+    font-family: Hammersmith One;
+    font-size: 16px;
+    color: #00e0d0;
+    cursor: pointer;
+    padding: 12px 16px;
+    border: 1px solid #00e0d0;
+    border-radius: 3px;
+    outline: none;
+}
+/*----------------------------HEADER----------------------------*/
+
+/*----------------------------MAIN----------------------------*/
+main-content {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*----------------------------MAIN----------------------------*/
+
+/*----------------------------FOOTER----------------------------*/
+.our-studio-group {
+    overflow: hidden;
+}
+
+    .our-studio-group img {
+        float: left;
+    }
+
+    .our-studio-group p {
+        margin-left: 16px;
+        float: left;
+        width: 80%;
+    }
+
+.send-input-group {
+    overflow: hidden;
+    margin-bottom: 27px;
+}
+
+    .send-input-group input {
+        float: left;
+        display: inline;
+        width: 209px;
+        height: 45px;
+        color: #d8d7dd;
+        background-color: transparent;
+        padding-left: 15px;
+        border-color: #d8d7dd;
+    }
+
+    .send-input-group .send-btn {
+        margin-left: 10px;
+        float: left;
+        display: inline;
+        width: 70px;
+        height: 45px;
+        background-color: rgba(255, 255, 255,0.5);
+        border: none;
+        outline: none;
+    }
+
+.send-btn :hover, .send-btn :active, .send-btn :focus {
+    outline: none;
+}
+
+footer .layer {
+    padding-top: 70px;
+}
+
+.footer-content, .bottom-copyright {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .footer-content h3 {
+        margin-bottom: 39px;
+    }
+
+    .footer-content .logo {
+        margin-bottom: 27px;
+    }
+
+    .footer-content .col-lg-4 {
+        margin-bottom: 70px;
+    }
+
+    .bottom-copyright a, .bottom-copyright a:hover {
+        background-color: transparent;
+        font-family: Roboto Regular;
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .bottom-copyright a {
+        margin-right: 34px;
+    }
+
+    .bottom-copyright .copyright p {
+        font-family: Roboto Regular;
+        font-size: 14px;
+        float: right;
+    }
+/*----------------------------FOOTER----------------------------*/
+
+/*----------------------------ABOUT----------------------------*/
+.about {
+    padding-top: 70px;
+    width: 890px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding-bottom: 70px;
+}
+
+    .about h2 {
+        margin: 0 0 28px 0;
+    }
+
+    .about p {
+        font-family: 'Roboto Light';
+        color: #817f86;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .about .about-logo {
+        padding-left: 4%;
+        padding-right: 10%;
+    }
+
+    .about .our-story {
+        padding: 0;
+    }
+
+.about-video {
+    height: 550px;
+    background: url(../Images/back_about_img.png) no-repeat;
+    position: relative;
+}
+
+    .about-video .play-btn {
+        font-family: 'Roboto Black';
+        font-size: 14px;
+        color: white;
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+        .about-video .play-btn:focus {
+            outline: none;
+        }
+
+        .about-video .play-btn img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 34px;
+        }
+/*----------------------------ABOUT----------------------------*/
+
+.inner-content {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+    /*----------------------------EXPERTISE----------------------------*/
+
+    .inner-content .expertise-title {
+        text-align: center;
+    }
+
+        .inner-content .expertise-title hr {
+            width: 50px;
+            height: 2px;
+            color: #c6c4c9;
+            background-color: #c6c4c9;
+            margin-top: 26px;
+        }
+
+        .inner-content .expertise-title h2 {
+            font-family: Playfair Display Bold;
+            font-size: 22px;
+        }
+
+        .inner-content .expertise-title p {
+            font-family: Playfair Display Regular;
+            font-size: 14px;
+            color: #78777b;
+            margin-bottom: 0;
+        }
+
+    .inner-content .items {
+        margin-top: 64px;
+        text-align: center;
+    }
+
+    .inner-content.expertise .items {
+        margin-bottom: 100px;
+    }
+
+    .inner-content .items hr {
+        color: #ebebeb;
+        background-color: #ebebeb;
+        margin: 37px 0 39px 0;
+    }
+
+    .inner-content .items h3 {
+        font-family: Roboto Black;
+        color: #413d4b;
+        margin-top: 0;
+        font-size: 14px;
+    }
+
+    .inner-content .items p {
+        font-family: Roboto Light;
+        font-size: 14px;
+        width: 85%;
+        color: #7a7a7a;
+        margin: 0 auto;
+    }
+
+    .inner-content .items img {
+        margin-bottom: 35px;
+    }
+/*----------------------------EXPERTISE----------------------------*/
+
+/*----------------------------TEAM----------------------------*/
+.team {
+    height: 712px;
+    background: url(../Images/back_team_img.png) no-repeat;
+    position: relative;
+}
+
+    .team .inner-content {
+        padding-top: 70px;
+    }
+
+    .team .main-title {
+        text-align: center;
+    }
+
+        .team .main-title h2 {
+            margin-top: 0;
+            color: white;
+        }
+
+        .team .main-title hr {
+            width: 50px;
+            height: 1px;
+            color: #c6c4c9;
+            background-color: #c6c4c9;
+            margin-top: 18px;
+        }
+
+        .team .main-title p {
+            font-family: Playfair Display Regular;
+            font-size: 14px;
+            color: #f9f9f9;
+            margin-bottom: 0;
+        }
+
+    .team .items {
+        margin-top: 47px;
+    }
+
+        .team .items .col-lg-3 {
+            padding: 0 10px;
+        }
+
+            .team .items .col-lg-3 img {
+                margin-bottom: 0;
+            }
+
+            .team .items .col-lg-3 div {
+                width: 100%;
+                padding-top: 20px;
+                padding-bottom: 27px;
+                border: 1px solid #7d7992;
+                border-top: 0;
+            }
+
+                .team .items .col-lg-3 div h3 {
+                    color: #ffffff;
+                    margin-bottom: 8px;
+                    line-height: 14px;
+                }
+
+                .team .items .col-lg-3 div p {
+                    font-size: 13px;
+                    line-height: 13px;
+                    color: #fafafa;
+                }
+
+    .team .inner-content .team-bottom {
+        margin-top: 70px;
+        text-align: center;
+    }
+/*----------------------------TEAM----------------------------*/
+
+/*----------------------------WORKS----------------------------*/
+.works .top-content {
+    height: 157px;
+    position: relative;
+}
+
+    .works .top-content div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .works .top-content h2, .works .top-content a {
+        margin: 0;
+    }
+
+    .works .top-content a {
+        font-family: Roboto Light;
+        font-size: 14px;
+        color: #413d4b;
+    }
+
+.works .middle-content {
+    height: 400px;
+    background: url(../Images/back_works_img.png) no-repeat;
+    position: relative;
+}
+
+.works .bottom-content {
+    height: 180px;
+    position: relative;
+}
+
+    .works .bottom-content button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+/*----------------------------WORKS----------------------------*/
+
+/*----------------------------TESTIMONIALS----------------------------*/
+.testimonials {
+    height: 500px;
+    background: url(../Images/back_testimonials_img.png) no-repeat;
+    position: relative;
+}
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+  display:block;
+}
+
+.carousel-div{
+  position: relative;
+}
+
+#quote-carousel .carousel-indicators {
+    position: relative;
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-top: 20px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all .4s ease-in;
+    vertical-align: middle;
+}
+#quote-carousel .carousel-indicators .active {
+    width: 128px;
+    height: 128px;
+    transition: all .2s;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+/*----------------------------TESTIMONIALS----------------------------*/

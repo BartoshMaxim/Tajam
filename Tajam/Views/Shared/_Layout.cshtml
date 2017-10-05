@@ -1,0 +1,172 @@
+﻿@{
+    string currentTab = String.Empty;
+    if (ViewBag.CurrentTab != null)
+    {
+        currentTab = (string)ViewBag.CurrentTab;
+    }
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Styles/Style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <div class="layer">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">
+                                <img src="~/Content/Images/Logo.png" alt="logo" />
+                            </a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li id="home">
+                                @Html.ActionLink("HOME", "Index", "Home")
+                            </li>
+                            <li id="about">
+                                @Html.ActionLink("ABOUT", "About", "Home")
+                            </li>
+                            <li id="expertise">
+                                @Html.ActionLink("EXPERTISE", "Expertise", "Home")
+                            </li>
+                            <li id="teams">
+                                @Html.ActionLink("TEAMS", "Teams", "Home")
+                            </li>
+                            <li id="works">
+                                @Html.ActionLink("WORKS", "Works", "Home")
+                            </li>
+                            <li id="testimonials">
+                                @Html.ActionLink("PEAPLE SAY", "Testimonials", "Home")
+                            </li>
+                            <li id="contact">
+                                @Html.ActionLink("CONTACT", "Index", "Home")
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="head-text">We Are Awesome Creative Agency</div>
+                            <hr>
+                            <div class="main-text">
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                            </div>
+                            <button class="learn-more-btn">
+                                LEARN MORE
+                            </button>
+                        </div>
+
+                        <div class="item">
+                            <div class="head-text">We Are Awesome Creative Agency</div>
+                            <hr>
+                            <div class="main-text">
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                            </div>
+                            <button class="learn-more-btn">
+                                LEARN MORE
+                            </button>
+                        </div>
+
+                        <div class="item">
+                            <div class="head-text">We Are Awesome Creative Agency</div>
+                            <hr>
+                            <div class="main-text">
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                            </div>
+                            <button class="learn-more-btn">
+                                LEARN MORE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main-content>
+            @RenderBody()
+        </main-content>
+        <footer>
+            <div class="layer">
+                <div class="footer-content">
+                    <div class="col-lg-4">
+                        <img class="logo" src="~/Content/Images/Logo.png" alt="logo" />
+                        <div>
+                            <p>
+                                lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>OUR STUDIO</h3>
+                        <div class="our-studio-group">
+                            <img src="~/Content/Images/address.png" alt="logo" />
+                            <p>
+                                Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat
+                                11480 - Indonesia
+                            </p>
+                        </div>
+                        <div class="our-studio-group">
+                            <img src="~/Content/Images/telephone.png" alt="logo" />
+                            <p>
+                                (+62) 21-2224 3333
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>
+                            STAY IN TOUCH
+                        </h3>
+                        <div class="send-input-group">
+                            <input class="input-validation-error text-box single-line" placeholder="Subscribe our newsletter"
+                                   data-val="true" data-val-regex="Not correct email" data-val-regex-pattern="^([\w\.\-]+)@@([\w\-]+)((\.(\w){2,3})+)$"
+                                   data-val-required="Enter user email" id="Email" name="Email" type="text">
+                            <button class="send-btn">
+                                <img src="~/Content/Images/paper122.png" alt="logo" />
+                            </button>
+                        </div>
+                        <img src="~/Content/Images/social-sprite.png" alt="logo" />
+                    </div>
+                </div>
+                <div class="bottom-copyright">
+                    <div class="col-lg-6 ">
+                        <a href="#">HELP</a>
+                        <a href="#">TERMS & CONDITION</a>
+                        <a href="#">PRIVACY</a>
+                    </div>
+
+                    <div class="col-lg-6 copyright">
+                        <p>Copyright &#9400; @DateTime.Now.Year - Tajem Creative</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/main.js"></script>
+    <script>
+        $('@currentTab').attr('class', 'active');
+    </script>
+</body>
+</html>
